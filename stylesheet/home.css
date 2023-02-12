@@ -23,3 +23,9 @@
 .withdraw-box {
     color:white;
 }
+
+@media  only screen and (max-width:767px) {
+.deposit-box {
+    margin-bottom: 2rem;
+    margin-right: 0;
+}
