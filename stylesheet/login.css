@@ -1,0 +1,29 @@
+.bank-login-header {
+    padding:4rem 8rem;
+    max-width: 892px;
+    margin:5rem auto;
+}
+
+.form-input label {
+    font-size: 2.5rem;
+}
+
+.form-input input {
+    font-size:1.5rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    border:none;
+    outline: none;
+    padding:0.5rem;
+}
+
+
+.bank-login-btn {
+    border-radius: 1rem;
+}
+
+
+#login-error {
+    font-size: 2rem;
+    color:var(--color-danger)
+}
