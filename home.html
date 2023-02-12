@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <link rel="shortcut icon" href="./images/bank.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheet/library.css">
+    <link rel="stylesheet" href="./stylesheet/home.css">
+    <script src="./js/utility.js"></script>
+    <script defer src="./js/home.js"></script>
+</head>
+<body>
+    <header class="container-xs text-center mb-5">
+        <h1 class="pt-5 text-primary">
+           Bank Statement 
+        </h1>
+    </header>
+    <main class="container-xs bank-account-info">
+        <section class="row bg-secondary p-5 text-center">
+            <div class="col-md-4 bank-account-card p-5 deposit-card bg-primary">
+                Deposit <br>
+                $$<span>0</span>
+            </div>
+            <div class="col-md-4 bank-account-card p-5 withdraw-card bg-danger">
+                Withdraw
+                <br>
+                $$<span>0</span>
+            </div>
+            <div class="col-md-4 bank-account-card p-5 balance-card bg-info">
+                Balance
+                <br>
+                $$<span>0</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

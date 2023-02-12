@@ -1,0 +1,10 @@
+.bank-account-info {
+    padding:5rem 8rem;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.bank-account-card {
+    font-size: 2.5rem;
+    color:white;
+}

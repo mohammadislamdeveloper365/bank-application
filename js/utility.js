@@ -1,7 +1,11 @@
 function getInputFieldValue(id) {
-    return document.getElementById(id).value;
+    return getElement(id).value;
 }
 
 function getValueOfElement(id) {
-    return document.getElementById(id).innerText;
+    return getElement(id).innerText;
+}
+
+function getElement(id) {
+    return document.getElementById(id);
 }

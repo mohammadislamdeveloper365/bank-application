@@ -19,9 +19,9 @@ CSS Framework/Library
 */
 :root {
     --primary-color:rgb(55, 11, 142,0.5);
-    --secondary-color:#EF5354;
+    --secondary-color:#ccc0c0;
     --color-danger:#E21717;
-    --color-dark: black;
+    --color-dark: rgb(125, 117, 117);
     --color-light:rgb(255, 255, 255);
     --color-info:#EDBF69;
     --color-light-dark:rgb(117, 130, 131,0.1);
