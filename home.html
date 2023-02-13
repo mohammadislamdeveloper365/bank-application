@@ -18,20 +18,20 @@
         </h1>
     </header>
     <main class="container-xs bank-account-info">
-        <section class="row bg-secondary p-5 text-center mb-5">
-            <div class="col-md-4 bank-account-card p-5 deposit-card bg-primary">
+        <section class="row bg-secondary p-5 text-center mb-5 justify-content-center">
+            <div class="col-md-3 bank-account-card p-5 deposit-card bg-primary">
                 Deposit <br>
-                $$<span>0</span>
+                $$<span id="deposit-amount">0</span>
             </div>
-            <div class="col-md-4 bank-account-card p-5 withdraw-card bg-danger">
+            <div class="col-md-3 bank-account-card p-5 withdraw-card bg-danger">
                 Withdraw
                 <br>
-                $$<span>0</span>
+                $$<span id="withdraw-amount">0</span>
             </div>
-            <div class="col-md-4 bank-account-card p-5 balance-card bg-info">
+            <div class="col-md-3 bank-account-card p-5 balance-card bg-info">
                 Balance
                 <br>
-                $$<span>4500</span>
+                $$<span id="balance-amount">4500</span>
             </div>
         </section>
         <section class="row mb-5 p-5 bg-light-dark justify-content-center">
@@ -41,7 +41,9 @@
                 </h2>
                 <div class="pt-2">
                     <p>Enter Amount</p>
-                    <input type="text" id="deposit-amount">
+                    <input type="text" id="input-deposit" class="mb-1"> <br>
+                    <button class="btn btn-secondary rounded-1" id="deposit-btn">Deposit</button>
+                    <p id="deposit-error"></p>
                 </div>
             </div>
             <div class="col-md-5 p-5 withdraw-box bg-danger">
@@ -50,7 +52,9 @@
                     </h2>
                     <div class="pt-2">
                         <p >Enter Amount</p>
-                        <input type="text" id="withdraw-amount">
+                        <input type="text" id="input-withdraw" class="mb-1"> <br>
+                        <button class="btn btn-secondary rounded-1" id="withdraw-btn">Withdraw</button>
+                        <p id="withdraw-error"></p>
                     </div>
             </div>
         </section>

@@ -1,17 +1,21 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
 .bank-login-header {
+    border-radius: 5rem;
     padding:4rem 8rem;
     max-width: 892px;
     margin:5rem auto;
 }
 
 .form-input label {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
 }
 
 .form-input input {
     font-size:1.5rem;
     border-radius: 1rem;
-    background-color: var(--secondary-color);
+    background-color: rgb(232, 240, 254);
     border:none;
     outline: none;
     padding:0.5rem;
@@ -20,6 +24,7 @@
 
 .bank-login-btn {
     border-radius: 1rem;
+    width:100%;
 }
 
 

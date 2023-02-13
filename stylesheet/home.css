@@ -9,23 +9,45 @@
     color:white;
 }
 
+.withdraw-card {
+    margin:0 2rem;
+}
+
 .deposit-box {
     margin-right:2rem;
     color:white;
 }
 
+.rounded-1 {
+    border-radius:1rem;
+}
 .deposit-box input, .withdraw-box input {
     padding:0.5rem;
     outline:none;
     border:none;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+}
+
+#deposit-error, #withdraw-error {
+    color:red;
+    font-size:1.5rem;
+}
+
+#withdraw-error {
+    color:white;
 }
 .withdraw-box {
     color:white;
 }
 
+
 @media  only screen and (max-width:767px) {
-.deposit-box {
-    margin-bottom: 2rem;
-    margin-right: 0;
+    .deposit-box {
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .withdraw-card {
+        margin:2rem 0;
+    }
 }
