@@ -32,3 +32,10 @@ body {
     font-size: 2rem;
     color:var(--color-danger)
 }
+
+#box {
+    padding:1rem;
+    font-size: 2rem;
+    margin:auto;
+    width:40%;
+}
