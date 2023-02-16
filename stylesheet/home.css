@@ -1,3 +1,4 @@
+
 .bank-account-info {
     padding:5rem 8rem;
     max-width: 1200px;
@@ -26,6 +27,7 @@
     outline:none;
     border:none;
     border-radius: 1rem;
+    width:80%;
 }
 
 #deposit-error, #withdraw-error {
@@ -49,5 +51,16 @@
 
     .withdraw-card {
         margin:2rem 0;
+    }
+
+    .deposit-box input, .withdraw-box input {
+        width:60%;
+    }
+}
+
+
+@media  only screen and (max-width:575px) {
+    .deposit-box input, .withdraw-box input {
+        width:70%;
     }
 }
