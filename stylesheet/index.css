@@ -27,12 +27,6 @@ body {
     width:100%;
 }
 
-
-#login-error {
-    font-size: 2rem;
-    color:var(--color-danger)
-}
-
 #box {
     padding:1rem;
     font-size: 2rem;
