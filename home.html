@@ -18,12 +18,12 @@
         </h1>
     </header>
     <main class="container-xs bank-account-info">
-        <section class="row bg-secondary p-5 text-center mb-5 justify-content-center">
-            <div class="col-md-3 bank-account-card p-5 deposit-card bg-primary">
+        <section class="row bg-primary p-5 text-center mb-5 justify-content-center">
+            <div class="col-md-3 bank-account-card p-5 deposit-card bg-green">
                 Deposit <br>
                 $$<span id="deposit-amount">0</span>
             </div>
-            <div class="col-md-3 bank-account-card p-5 withdraw-card bg-danger">
+            <div class="col-md-3 bank-account-card p-5 withdraw-card bg-dark">
                 Withdraw
                 <br>
                 $$<span id="withdraw-amount">0</span>
@@ -35,7 +35,7 @@
             </div>
         </section>
         <section class="row mb-5 p-5 bg-light-dark justify-content-center">
-            <div class="col-md-5 p-5 deposit-box bg-info">
+            <div class="col-md-5 p-5 deposit-box bg-green">
                 <h2>
                     Deposit
                 </h2>
@@ -43,10 +43,9 @@
                     <p>Enter Amount</p>
                     <input type="text" id="input-deposit" class="mb-1"> <br>
                     <button class="btn btn-secondary rounded-1" id="deposit-btn">Deposit</button>
-                    <p id="deposit-error"></p>
                 </div>
             </div>
-            <div class="col-md-5 p-5 withdraw-box bg-danger">
+            <div class="col-md-5 p-5 withdraw-box bg-dark">
                     <h2>
                         Withdraw
                     </h2>
@@ -54,7 +53,6 @@
                         <p >Enter Amount</p>
                         <input type="text" id="input-withdraw" class="mb-1"> <br>
                         <button class="btn btn-secondary rounded-1" id="withdraw-btn">Withdraw</button>
-                        <p id="withdraw-error"></p>
                     </div>
             </div>
         </section>

@@ -30,14 +30,6 @@
     width:80%;
 }
 
-#deposit-error, #withdraw-error {
-    color:red;
-    font-size:1.5rem;
-}
-
-#withdraw-error {
-    color:white;
-}
 .withdraw-box {
     color:white;
 }

@@ -177,6 +177,10 @@ COLOR--BACKGROUND COLOR
     background-color:var(--color-info);
 }
 
+.bg-green {
+    background-color:#59db84;
+}
+
 .bg-dark {
     background-color:var(--color-dark);
 }
