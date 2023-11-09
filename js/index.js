@@ -1,4 +1,4 @@
-let loginButton = getElement('bank-login');
+let loginButton = getElementById('bank-login');
 
 //Add event listener for button
 loginButton.addEventListener('click',loginFormHandler);
@@ -13,7 +13,7 @@ document.addEventListener('keydown',function(event) {
 function loginFormHandler() {
   let passwordField = getFieldValue('password', true);
    let usernameField = getFieldValue('username', true);
-   let errorField = getElement('error-message');
+   let errorField = getElementById('error-message');
    
    if(errorField) {
      errorField.parentNode.removeChild(errorField);
@@ -22,8 +22,8 @@ function loginFormHandler() {
     window.location.href = 'home.html'
    } else {
       const errorField = createElement('p', "Please enter valid email or password");
-      const btn = getElement('bank-login');
-      const form = getElement('bank-login-form');
+      const btn = getElementById('bank-login');
+      const form = getElementById('bank-login-form');
       errorField.style.fontSize = '1.5rem';
       errorField.style.color = '#E21717';
       errorField.style.textAlign = 'left';

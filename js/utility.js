@@ -1,5 +1,5 @@
 function getFieldValue(id, isValue = false) {
-    const element = getElement(id);
+    const element = getElementById(id);
     let value;
     
     if(isValue) {
@@ -19,22 +19,12 @@ function createElement(elmentType, textNode) {
     return element;
 }
 
-function getInputFieldValue(id) {
-    return getElement(id).value;
-}
-
-function getValueOfElement(id) {
-    return getElement(id).innerText;
-}
-
-function getElement(id) {
+function getElementById(id) {
     return document.getElementById(id);
 }
 
-function getInputFieldValueNumber(id) {
-    return parseFloat(getInputFieldValue(id));
+function getNumberOfFieldValue(id,isInput) {
+    return parseFloat(getFieldValue(id,isInput));
 }
 
-function getValueOfElementNumber(id) {
-    return parseFloat(getValueOfElement(id));
-}
+
