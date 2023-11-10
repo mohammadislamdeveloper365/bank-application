@@ -1,3 +1,5 @@
+import { createElement, getElementById,getNumberOfFieldValue } from './utility.js'
+
 getElementById('deposit-btn').addEventListener('click',function() {
     changeBalanceAmount('balance-amount','deposit-amount','input-deposit',true);
 });

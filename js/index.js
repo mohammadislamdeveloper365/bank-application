@@ -1,6 +1,8 @@
+import { createElement, getElementById, getFieldValue } from './utility.js'
+
 let loginButton = getElementById('bank-login');
 
-//Add event listener for button
+//Add event listener for login button
 loginButton.addEventListener('click',loginFormHandler);
 
 document.addEventListener('keydown',function(event) {
