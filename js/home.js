@@ -23,34 +23,35 @@ getElementById('input-withdraw').addEventListener('keydown',function(event) {
 
 
 function changeBalanceAmount(balanceFieldId,targetFieldId,inputFieldId,isIncrease) {
-    let inputAmount = getNumberOfFieldValue(inputFieldId, true);
+    let balanceAmount = getNumberOfFieldValue(balanceFieldId);
+    let inputAmount =  getNumberOfFieldValue(inputFieldId, true).toFixed(2);
     let inputValidationField = getElementById('input-field-error');
     const inputField = getElementById(inputFieldId);
+    let targetFieldAmount = getNumberOfFieldValue(targetFieldId);
+    let targetField = getElementById(targetFieldId);
+    let balanceField = getElementById(balanceFieldId);
     
     if(inputValidationField) {
         inputValidationField.parentNode.removeChild(inputValidationField);
     }
-
-    if(!isNaN(inputAmount) && inputAmount >= 0) {
-        let balanceAmount = getNumberOfFieldValue(balanceFieldId);
-        let targetFieldAmount = getNumberOfFieldValue(targetFieldId);
-        let targetField = getElementById(targetFieldId);
-        let balanceField = getElementById(balanceFieldId);
     
-        targetFieldAmount = inputAmount + targetFieldAmount;
+    if(!isNaN(inputAmount) && inputAmount >= 0 && (inputFieldId === 'input-withdraw' && (balanceAmount > parseFloat(inputField.value)) )) {
+        targetFieldAmount = parseFloat(inputAmount) + targetFieldAmount;
+        targetField.innerText = targetFieldAmount;    
+        balanceField.innerText = (balanceAmount - inputAmount).toFixed(2); 
+
+    } else if(inputFieldId !== 'input-withdraw' && !isNaN(inputAmount) && inputAmount >= 0) {
+        targetFieldAmount = parseFloat(inputAmount) + targetFieldAmount;
         targetField.innerText = targetFieldAmount;
-        if(isIncrease) {
-            balanceField.innerText = balanceAmount + inputAmount;
-        } else {
-            balanceField.innerText = balanceAmount - inputAmount; 
-        }
-
-    }
-
-    else {
+        balanceField.innerText = (balanceAmount + parseFloat(inputAmount)).toFixed(2);
+    } else {
         let targetedElement;
         let errorField;
-        errorField = createElement('p','Please enter a valid number');
+        if((inputFieldId === 'input-withdraw' && (balanceAmount < parseFloat(inputField.value)))) {
+            errorField = createElement('p',"Withdraw can't be bigger than your balance");
+        } else {
+            errorField = createElement('p','Please enter a valid number');
+        }
         errorField.id = 'input-field-error';
         errorField.style.fontWeight = 'bold';
         errorField.style.lineHeight = '1.5';
